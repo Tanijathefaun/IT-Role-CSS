@@ -40,7 +40,7 @@
 }
 
 /* Pisy */
-*.printuser a:only-child[href*=dr-pisy]::before {
+.printuser a:only-child[href*=dr-pisy]::before {
     background: linear-gradient(110deg, var(--it_ad) 32%, var(--it_td) 34%, var(--it_td) 64%, var(--it_soc) 66%);
     content: " ";
 	width: 24px;
@@ -51,7 +51,7 @@
 }
 .printuser a:last-child[href*=dr-pisy]:hover::after {
     content: "Amministratore, Traduttore, Responsabile Social";
-}*
+}
  
  
  
