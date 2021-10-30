@@ -148,50 +148,6 @@
 
 /* User */
 /* 3 Roles */
-/* Traduttore + Capo Team Social + Redazione Corriere */
-
-/* .printuser a:only-child[href*=dgctt]::before {
-    background: linear-gradient(110deg, var(--it_td) 32%, var(--it_so) 34%, var(--it_so) 64%, var(--it_co) 66%);
-    content: " ";
-    width: 24px;
-}
-.printuser > a:first-child:not(:only-child)[href*=dgctt]::after {
-    background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_so) 5px, var(--it_so) 9px, #2c2c2c, var(--it_co) 10px);
-    content: " ";
-}
-.printuser a:last-child[href*=dgctt]:hover::after {
-    content: "Traduttore, Capo Team Social, Redazione Corriere";
-} */
-
-/* Traduttore + Team Social + Redazione Corriere */
-
-/* .printuser a:only-child[href*=lo-dev]::before {
-    background: linear-gradient(110deg, var(--it_td) 32%, var(--it_so) 34%, var(--it_so) 64%, var(--it_co) 66%);
-    content: " ";
-    width: 24px;
-}
-.printuser > a:first-child:not(:only-child)[href*=lo-dev]::after {
-    background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_so) 5px, var(--it_so) 9px, #2c2c2c, var(--it_co) 10px);
-    content: " ";
-}
-.printuser a:last-child[href*=lo-dev]:hover::after {
-    content: "Traduttore, Team Social, Redazione Corriere";
-} /*
-
-/* Traduttore + Traduttore Internazionale + Team Controllo Canone */
-
-/* .printuser a:only-child[href*=siddartha-alonne]::before {
-    background: linear-gradient(110deg, var(--it_td) 32%, var(--it_ti) 34%, var(--it_ti) 64%, var(--it_tc) 66%);
-    content: " ";
-    width: 24px;
-}
-.printuser > a:first-child:not(:only-child)[href*=siddartha-alonne]::after {
-    background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_ti) 5px, var(--it_ti) 9px, #2c2c2c, var(--it_tc) 10px);
-    content: " ";
-}
-.printuser a:last-child[href*=siddartha-alonne]:hover::after {
-    content: "Traduttore, Traduttore Internazionale, Team Controllo Canone";
-} */
 
 /* Traduttore + Redazione Corriere + Team Controllo Canone */
 
@@ -206,7 +162,7 @@
     background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_co) 5px, var(--it_co) 9px, #2c2c2c, var(--it_tc) 10px);
     content: " ";
 }
-.printuser a:last-child[href*=lo-dev]:hover::after {
+.printuser a:last-child[href*=lo-dev]:hover::after,
 .printuser a:last-child[href*=siddartha-alonne]:hover::after {
     content: "Traduttore, Redazione Corriere, Team Controllo Canone";
 }
@@ -216,26 +172,17 @@
 /* 2 Roles */
 /* Traduttore + Team Controllo Canone */
 
-.printuser a:only-child[href*=thatguyrichard]::before {
-    background: linear-gradient(110deg, var(--it_td) 49%, var(--it_tc) 51%);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=thatguyrichard]::after {
-    background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_tc) 7px);
-    content: " ";
-}
-.printuser a:last-child[href*=thatguyrichard]:hover::after {
-    content: "Traduttore, Team Controllo Canone";
-}
-
+.printuser a:only-child[href*=thatguyrichard]::before,
 .printuser a:only-child[href*=quantumcryptographer]::before {
     background: linear-gradient(110deg, var(--it_td) 49%, var(--it_tc) 51%);
     content: " ";
 }
+.printuser > a:first-child:not(:only-child)[href*=thatguyrichard]::after,
 .printuser > a:first-child:not(:only-child)[href*=quantumcryptographer]::after {
     background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_tc) 7px);
     content: " ";
 }
+.printuser a:last-child[href*=thatguyrichard]:hover::after,
 .printuser a:last-child[href*=quantumcryptographer]:hover::after {
     content: "Traduttore, Team Controllo Canone";
 }
@@ -284,32 +231,20 @@
 
 /* Traduttore, Traduttore Internazionale */
 
-.printuser a:only-child[href*="90377sedna"]::before {
-    background: linear-gradient(110deg, var(--it_td) 49%, var(--it_ti) 51%);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*="90377sedna"]::after {
-    background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_ti) 7px);
-    content: " ";
-}
-.printuser a:last-child[href*="90377sedna"]:hover::after {
-    content: "Traduttore, Traduttore Internazionale";
-}
-
+.printuser a:only-child[href*="90377sedna"]::before,
 .printuser a:only-child[href*=theboxoffun]::before {
     background: linear-gradient(110deg, var(--it_td) 49%, var(--it_ti) 51%);
     content: " ";
 }
+.printuser > a:first-child:not(:only-child)[href*="90377sedna"]::after,
 .printuser > a:first-child:not(:only-child)[href*=theboxoffun]::after {
     background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_ti) 7px);
     content: " ";
 }
+.printuser a:last-child[href*="90377sedna"]:hover::after,
 .printuser a:last-child[href*=theboxoffun]:hover::after {
     content: "Traduttore, Traduttore Internazionale";
 }
-
-
-
 
 /* User */
 /* 1 Role */
@@ -360,8 +295,6 @@
 .printuser a:last-child[href*=bob-class-ai]:hover::after {
     content: "Team Social";
 }
-
-
 
 /* Traduttore INT */
 
