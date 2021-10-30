@@ -1,4 +1,4 @@
-/* ----  Colori dei Team  ---- */
+/* ----  Colori dei Team CSS ---- */
  
 :root {
     --it_ad: #ea2525;
@@ -22,7 +22,44 @@
     margin-right: 3px;
     width: 16px;
 }
+.printuser > a:first-child:not(:only-child)::after {
+    border: 1px solid #2c2c2c;
+    display: inline-block;
+    height: 14px;
+    position: relative;
+    right: 9px;
+    top: 1px;
+    vertical-align: top;
+    width: 5px;
+    white-space: pre;
+}
 
+.no-staff-highlight .printuser a::before,
+.no-staff-highlight .printuser > a:first-child:not(:only-child)::after,
+#page-content .printuser a::before,
+#page-content .printuser > a:first-child:not(:only-child)::after,
+#login-status .printuser a::before,
+#login-status .printuser > a:first-child:not(:only-child)::after {
+    display: none;
+}
+#page-content .highlight-staff .printuser a::before,
+#page-content .highlight-staff .printuser > a:first-child:not(:only-child)::after {
+    display: inline-block;
+}
+ 
+.printuser a:last-child:hover::after {
+    background: var(--ct_bg_body);
+    border: 1px solid var(--ct_col_body-txt);
+    color: var(--ct_col_body-txt);
+    font-size: 85%;
+    margin: 29px 0 0 -70px;
+    padding: 0 2px;
+    position: absolute;
+    z-index: 10;
+}
+
+
+/* ----  Colori dei Team  ---- */
 
 /* Amministratore */
 
@@ -108,8 +145,10 @@
     content: "Moderatore, Traduttore";
 }
 
+
 /* User */
 /* 3 Roles */
+/* Traduttore + Capo Team Social + Redazione Corriere */
 
 .printuser a:only-child[href*=dgctt]::before {
     background: linear-gradient(110deg, var(--it_td) 32%, var(--it_so) 34%, var(--it_so) 64%, var(--it_co) 66%);
@@ -124,6 +163,8 @@
     content: "Traduttore, Capo Team Social, Redazione Corriere";
 }
 
+/* Traduttore + Team Social + Redazione Corriere */
+
 .printuser a:only-child[href*=lo-dev]::before {
     background: linear-gradient(110deg, var(--it_td) 32%, var(--it_so) 34%, var(--it_so) 64%, var(--it_co) 66%);
     content: " ";
@@ -136,6 +177,8 @@
 .printuser a:last-child[href*=lo-dev]:hover::after {
     content: "Traduttore, Team Social, Redazione Corriere";
 }
+
+/* Traduttore + Traduttore Internazionale + Team Controllo Canone */
 
 .printuser a:only-child[href*=siddartha-alonne]::before {
     background: linear-gradient(110deg, var(--it_td) 32%, var(--it_ti) 34%, var(--it_ti) 64%, var(--it_tc) 66%);
@@ -154,6 +197,7 @@
 
 /* User */
 /* 2 Roles */
+/* Traduttore + Team Controllo Canone */
 
 .printuser a:only-child[href*=thatguyrichard]::before {
     background: linear-gradient(110deg, var(--it_td) 49%, var(--it_tc) 51%);
@@ -179,6 +223,8 @@
     content: "Traduttore, Team Controllo Canone";
 }
 
+/* Capo Traduttore + Team Social */
+
 .printuser a:only-child[href*=dr-vulpes]::before {
     background: linear-gradient(110deg, var(--it_ct) 49%, var(--it_so) 51%);
     content: " ";
@@ -191,6 +237,8 @@
     content: "Capo Traduttore, Team Social";
 }
 
+/* Team Social, Traduttore Internazionale */
+
 .printuser a:only-child[href*=agt-fedrik]::before {
     background: linear-gradient(110deg, var(--it_so) 49%, var(--it_ti) 51%);
     content: " ";
@@ -202,6 +250,8 @@
 .printuser a:last-child[href*=agt-fedrik]:hover::after {
     content: "Team Social, Traduttore Internazionale";
 }
+
+/* Traduttore, Traduttore Internazionale */
 
 .printuser a:only-child[href*="90377sedna"]::before {
     background: linear-gradient(110deg, var(--it_td) 49%, var(--it_ti) 51%);
@@ -227,7 +277,7 @@
     content: "Traduttore, Traduttore Internazionale";
 }
 
-
+/* Team Social, Traduttore */
 
 .printuser > a:first-child:not(:only-child)[href*=amatropie]::after {
     background: var(--it_co);
@@ -245,8 +295,7 @@
 
 /* User */
 /* 1 Role */
-
-
+/* Capo Team Controllo Canone */
 
 .printuser a:only-child[href*=dr-zeno]::before {
     background: var(--it_tc);
@@ -260,6 +309,7 @@
     content: "Capo Team Controllo Canone";
 }
 
+/* Redazione Corriere */
 
 .printuser a:only-child[href*=drgesso]::before {
     background: var(--it_co);
@@ -274,6 +324,7 @@
 }
 
 
+/* Traduttore INT */
 
 .printuser a:only-child[href*=nazartheezio]::before,
 .printuser a:only-child[href*=Leonor-Bolek]::before,
@@ -293,6 +344,7 @@
     content: "Traduttore Internazionale";
 }
 
+/* Traduttore */
 
 .printuser a:only-child[href*=almosca99]::before,
 .printuser a:only-child[href*=claudoi]::before,
@@ -359,60 +411,3 @@
 .printuser a:last-child[href*=venez]:hover::after {
     content: "Traduttore";
 }
-
-
- 
-.printuser > a:first-child:not(:only-child)::after {
-    border: 1px solid #2c2c2c;
-    display: inline-block;
-    height: 14px;
-    position: relative;
-    right: 9px;
-    top: 1px;
-    vertical-align: top;
-    width: 5px;
-    white-space: pre;
-}
- 
-
-
-
-
-
-
-
-
-
- 
-.no-staff-highlight .printuser a::before,
-.no-staff-highlight .printuser > a:first-child:not(:only-child)::after,
-#page-content .printuser a::before,
-#page-content .printuser > a:first-child:not(:only-child)::after,
-#login-status .printuser a::before,
-#login-status .printuser > a:first-child:not(:only-child)::after {
-    display: none;
-}
-#page-content .highlight-staff .printuser a::before,
-#page-content .highlight-staff .printuser > a:first-child:not(:only-child)::after {
-    display: inline-block;
-}
- 
-.printuser a:last-child:hover::after {
-    background: var(--ct_bg_body);
-    border: 1px solid var(--ct_col_body-txt);
-    color: var(--ct_col_body-txt);
-    font-size: 85%;
-    margin: 29px 0 0 -70px;
-    padding: 0 2px;
-    position: absolute;
-    z-index: 10;
-}
- 
-
-
-
-
-
-
-
-
