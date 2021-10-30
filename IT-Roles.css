@@ -150,7 +150,7 @@
 /* 3 Roles */
 /* Traduttore + Capo Team Social + Redazione Corriere */
 
-.printuser a:only-child[href*=dgctt]::before {
+/* .printuser a:only-child[href*=dgctt]::before {
     background: linear-gradient(110deg, var(--it_td) 32%, var(--it_so) 34%, var(--it_so) 64%, var(--it_co) 66%);
     content: " ";
     width: 24px;
@@ -161,7 +161,7 @@
 }
 .printuser a:last-child[href*=dgctt]:hover::after {
     content: "Traduttore, Capo Team Social, Redazione Corriere";
-}
+} */
 
 /* Traduttore + Team Social + Redazione Corriere */
 
@@ -180,7 +180,7 @@
 
 /* Traduttore + Traduttore Internazionale + Team Controllo Canone */
 
-.printuser a:only-child[href*=siddartha-alonne]::before {
+/* .printuser a:only-child[href*=siddartha-alonne]::before {
     background: linear-gradient(110deg, var(--it_td) 32%, var(--it_ti) 34%, var(--it_ti) 64%, var(--it_tc) 66%);
     content: " ";
     width: 24px;
@@ -191,8 +191,22 @@
 }
 .printuser a:last-child[href*=siddartha-alonne]:hover::after {
     content: "Traduttore, Traduttore Internazionale, Team Controllo Canone";
-}
+} */
 
+/* Traduttore + Redazione Corriere + Team Controllo Canone */
+
+.printuser a:only-child[href*=siddartha-alonne]::before {
+    background: linear-gradient(110deg, var(--it_td) 32%, var(--it_co) 34%, var(--it_co) 64%, var(--it_tc) 66%);
+    content: " ";
+    width: 24px;
+}
+.printuser > a:first-child:not(:only-child)[href*=siddartha-alonne]::after {
+    background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_co) 5px, var(--it_co) 9px, #2c2c2c, var(--it_tc) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=siddartha-alonne]:hover::after {
+    content: "Traduttore, Redazione Corriere, Team Controllo Canone";
+}
 
 
 /* User */
@@ -237,6 +251,20 @@
     content: "Capo Traduttore, Team Social";
 }
 
+/* Team Social + Traduttore */
+
+.printuser a:only-child[href*=dgctt]::before {
+    background: linear-gradient(110deg, var(--it_ct) 49%, var(--it_so) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=dgctt]::after {
+    background: linear-gradient(var(--it_ct) 6px, #2c2c2c 7px, var(--it_so) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=dgctt]:hover::after {
+    content: "Traduttore, Team Social";
+}
+
 /* Team Social, Traduttore Internazionale */
 
 .printuser a:only-child[href*=agt-fedrik]::before {
@@ -253,15 +281,15 @@
 
 /* Traduttore, Traduttore Internazionale */
 
-.printuser a:only-child[href*="90377sedna"]::before {
+.printuser a:only-child[href*=90377sedna]::before {
     background: linear-gradient(110deg, var(--it_td) 49%, var(--it_ti) 51%);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*="90377sedna"]::after {
+.printuser > a:first-child:not(:only-child)[href*=90377sedna]::after {
     background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_ti) 7px);
     content: " ";
 }
-.printuser a:last-child[href*="90377sedna"]:hover::after {
+.printuser a:last-child[href*=90377sedna]:hover::after {
     content: "Traduttore, Traduttore Internazionale";
 }
 
@@ -277,19 +305,6 @@
     content: "Traduttore, Traduttore Internazionale";
 }
 
-/* Team Social, Traduttore */
-
-.printuser > a:first-child:not(:only-child)[href*=amatropie]::after {
-    background: var(--it_co);
-    content: " ";
-}
-.printuser a:only-child[href*=amatropie]::before {
-    background: var(--it_co);
-    content: " ";
-}
-.printuser a:last-child[href*=amatropie]:hover::after {
-    content: "Traduttore, Team Social";
-}
 
 
 
@@ -311,7 +326,19 @@
 
 /* Redazione Corriere */
 
-.printuser a:only-child[href*=drgesso]::before {
+.printuser > a:first-child:not(:only-child)[href*=amatropie]::after {
+    background: var(--it_co);
+    content: " ";
+}
+.printuser a:only-child[href*=amatropie]::before {
+    background: var(--it_co);
+    content: " ";
+}
+.printuser a:last-child[href*=amatropie]:hover::after {
+    content: "Redazione Corriere";
+}
+
+/* .printuser a:only-child[href*=drgesso]::before {
     background: var(--it_co);
     content: " ";
 }
@@ -321,31 +348,45 @@
 }
 .printuser a:last-child[href*=drgesso]:hover::after {
     content: "Redazione Corriere";
-}
+} */
 
+/* Team Social */
+
+.printuser a:only-child[href*=bob-class-ai]::before {
+    background: var(--it_co);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=bob-class-ai]::after {
+    background: var(--it_co);
+    content: " ";
+}
+.printuser a:last-child[href*=bob-class-ai]:hover::after {
+    content: "Redazione Corriere";
+}
 
 /* Traduttore INT */
 
 .printuser a:only-child[href*=nazartheezio]::before,
-.printuser a:only-child[href*=Leonor-Bolek]::before,
+.printuser a:only-child[href*=leonor-bolek]::before,
 .printuser a:only-child[href*=heloderma-horridum]::before {
     background: var(--it_ti);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=Leonor-Bolek]::after,
+.printuser > a:first-child:not(:only-child)[href*=leonor-bolek]::after,
 .printuser > a:first-child:not(:only-child)[href*=nazartheezio]::after,
 .printuser > a:first-child:not(:only-child)[href*=heloderma-horridum]::after {
     background: var(--it_ti);
     content: " ";
 }
-.printuser a:last-child[href*=Leonor-Bolek]:hover::after,
+.printuser a:last-child[href*=leonor-bolek]:hover::after,
 .printuser a:last-child[href*=nazartheezio]:hover::after,
 .printuser a:last-child[href*=heloderma-horridum]:hover::after {
     content: "Traduttore Internazionale";
 }
 
 /* Traduttore */
-
+.printuser a:only-child[href*=tacoboy666]::before,
+.printuser a:only-child[href*=yesss]::before,
 .printuser a:only-child[href*=almosca99]::before,
 .printuser a:only-child[href*=claudoi]::before,
 .printuser a:only-child[href*=dr-placido]::before,
@@ -368,6 +409,8 @@
     background: var(--it_td);
     content: " ";
 }
+.printuser > a:first-child:not(:only-child)[href*=tacoboy666]::after,
+.printuser > a:first-child:not(:only-child)[href*=yessss]::after,
 .printuser > a:first-child:not(:only-child)[href*=almosca99]::after,
 .printuser > a:first-child:not(:only-child)[href*=claudoi]::after,
 .printuser > a:first-child:not(:only-child)[href*=dr-placido]::after,
@@ -390,6 +433,8 @@
     background: var(--it_td);
     content: " ";
 }
+.printuser a:last-child[href*=tacoboy666]:hover::after,
+.printuser a:last-child[href*=yessss]:hover::after,
 .printuser a:last-child[href*=almosca99]:hover::after,
 .printuser a:last-child[href*=claudoi]:hover::after,
 .printuser a:last-child[href*=dr-placido]:hover::after,
