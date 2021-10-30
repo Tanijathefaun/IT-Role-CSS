@@ -24,7 +24,7 @@
 }
 
 
-/* Users */
+/* Amministratore */
 
 /* Abadede */
 .printuser a:only-child[href*=mr-abadede]::before {
@@ -53,89 +53,247 @@
     content: "Amministratore, Traduttore, Responsabile Social";
 }
  
- 
- 
-___________________________
-
- 
-
-.printuser a:only-child[href*=dr-aisenberg]::before {
+/* Aisenberg */
+ .printuser a:only-child[href*=dr-aisenberg]::before {
     background: linear-gradient(110deg, var(--it_ad) 32%, var(--it_td) 34%, var(--it_td) 64%, var(--it_tc) 66%);
     content: " ";
     width: 24px;
 }
+.printuser > a:first-child:not(:only-child)[href*=dr-aisenberg]::after {
+    background: linear-gradient(var(--it_ad) 4px, #2c2c2c, var(--it_td) 5px, var(--it_td) 9px, #2c2c2c, var(--it_tc) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=dr-aisenberg]:hover::after {
+    content: "Amministratore, Traduttore, Team Controllo Canone";
+}
+
+/* Graph */
 .printuser a:only-child[href*=drgraph]::before {
     background: linear-gradient(110deg, var(--it_ad) 32%, var(--it_td) 34%, var(--it_td) 64%, var(--it_tc) 66%);
     content: " ";
     width: 24px;
 }
+.printuser > a:first-child:not(:only-child)[href*=drgraph]::after {
+    background: linear-gradient(var(--it_ad) 4px, #2c2c2c, var(--it_td) 5px, var(--it_td) 9px, #2c2c2c, var(--it_tc) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=drgraph]:hover::after {
+    content: "Amministratore, Traduttore, Team Controllo Canone";
+}
 
+/* TradeHumor */
 .printuser a:only-child[href*=tradehumor]::before {
     background: linear-gradient(110deg, var(--it_ad) 32%, var(--it_td) 34%, var(--it_td) 64%, var(--it_co) 66%);
     content: " ";
     width: 24px;
 }
+.printuser > a:first-child:not(:only-child)[href*=tradehumor]::after {
+    background: linear-gradient(var(--it_ad) 4px, #2c2c2c, var(--it_td) 5px, var(--it_td) 9px, #2c2c2c, var(--it_co) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=tradehumor]:hover::after {
+    content: "Moderatore, Traduttore, Redazione Corriere";
+}
+
+/* Riko */
 .printuser a:only-child[href*=riko-based-lifeform]::before {
     background: linear-gradient(110deg, var(--it_ad) 49%, var(--it_td) 51%);
     content: " ";
 }
-.printuser a:only-child[href*=dr-zeno]::before {
-    background: var(--it_tc);
+.printuser > a:first-child:not(:only-child)[href*=riko-based-lifeform]::after {
+    background: linear-gradient(var(--it_ad) 6px, #2c2c2c 7px, var(--it_td) 7px);
     content: " ";
 }
+.printuser a:last-child[href*=riko-based-lifeform]:hover::after {
+    content: "Moderatore, Traduttore";
+}
+
+/* User */
+/* 3 Roles */
+
+.printuser a:only-child[href*=dgctt]::before {
+    background: linear-gradient(110deg, var(--it_td) 32%, var(--it_so) 34%, var(--it_so) 64%, var(--it_co) 66%);
+    content: " ";
+    width: 24px;
+}
+.printuser > a:first-child:not(:only-child)[href*=dgctt]::after {
+    background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_so) 5px, var(--it_so) 9px, #2c2c2c, var(--it_co) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=dgctt]:hover::after {
+    content: "Traduttore, Capo Team Social, Redazione Corriere";
+}
+
+.printuser a:only-child[href*=lo-dev]::before {
+    background: linear-gradient(110deg, var(--it_td) 32%, var(--it_so) 34%, var(--it_so) 64%, var(--it_co) 66%);
+    content: " ";
+    width: 24px;
+}
+.printuser > a:first-child:not(:only-child)[href*=lo-dev]::after {
+    background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_so) 5px, var(--it_so) 9px, #2c2c2c, var(--it_co) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=lo-dev]:hover::after {
+    content: "Traduttore, Team Social, Redazione Corriere";
+}
+
+.printuser a:only-child[href*=siddartha-alonne]::before {
+    background: linear-gradient(110deg, var(--it_td) 32%, var(--it_ti) 34%, var(--it_ti) 64%, var(--it_tc) 66%);
+    content: " ";
+    width: 24px;
+}
+.printuser > a:first-child:not(:only-child)[href*=siddartha-alonne]::after {
+    background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_ti) 5px, var(--it_ti) 9px, #2c2c2c, var(--it_tc) 10px);
+    content: " ";
+}
+.printuser a:last-child[href*=siddartha-alonne]:hover::after {
+    content: "Traduttore, Traduttore Internazionale, Team Controllo Canone";
+}
+
+
+
+/* User */
+/* 2 Roles */
+
 .printuser a:only-child[href*=thatguyrichard]::before {
     background: linear-gradient(110deg, var(--it_td) 49%, var(--it_tc) 51%);
     content: " ";
 }
+.printuser > a:first-child:not(:only-child)[href*=thatguyrichard]::after {
+    background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_tc) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=thatguyrichard]:hover::after {
+    content: "Traduttore, Team Controllo Canone";
+}
+
 .printuser a:only-child[href*=quantumcryptographer]::before {
     background: linear-gradient(110deg, var(--it_td) 49%, var(--it_tc) 51%);
     content: " ";
 }
+.printuser > a:first-child:not(:only-child)[href*=quantumcryptographer]::after {
+    background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_tc) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=quantumcryptographer]:hover::after {
+    content: "Traduttore, Team Controllo Canone";
+}
+
 .printuser a:only-child[href*=dr-vulpes]::before {
     background: linear-gradient(110deg, var(--it_ct) 49%, var(--it_so) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=dr-vulpes]::after {
+    background: linear-gradient(var(--it_ct) 6px, #2c2c2c 7px, var(--it_so) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=dr-vulpes]:hover::after {
+    content: "Capo Traduttore, Team Social";
+}
+
+.printuser a:only-child[href*=agt-fedrik]::before {
+    background: linear-gradient(110deg, var(--it_so) 49%, var(--it_ti) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=agt-fedrik]::after {
+    background: linear-gradient(var(--it_so) 6px, #2c2c2c 7px, var(--it_ti) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=agt-fedrik]:hover::after {
+    content: "Team Social, Traduttore Internazionale";
+}
+
+.printuser a:only-child[href*="90377sedna"]::before {
+    background: linear-gradient(110deg, var(--it_td) 49%, var(--it_ti) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*="90377sedna"]::after {
+    background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_ti) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*="90377sedna"]:hover::after {
+    content: "Traduttore, Traduttore Internazionale";
+}
+
+.printuser a:only-child[href*=theboxoffun]::before {
+    background: linear-gradient(110deg, var(--it_td) 49%, var(--it_ti) 51%);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=theboxoffun]::after {
+    background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_ti) 7px);
+    content: " ";
+}
+.printuser a:last-child[href*=theboxoffun]:hover::after {
+    content: "Traduttore, Traduttore Internazionale";
+}
+
+
+
+.printuser > a:first-child:not(:only-child)[href*=amatropie]::after {
+    background: var(--it_co);
     content: " ";
 }
 .printuser a:only-child[href*=amatropie]::before {
     background: var(--it_co);
     content: " ";
 }
+.printuser a:last-child[href*=amatropie]:hover::after {
+    content: "Traduttore, Team Social";
+}
+
+
+
+/* User */
+/* 1 Role */
+
+
+
+.printuser a:only-child[href*=dr-zeno]::before {
+    background: var(--it_tc);
+    content: " ";
+}
+.printuser > a:first-child:not(:only-child)[href*=dr-zeno]::after {
+    background: var(--it_tc);
+    content: " ";
+}
+.printuser a:last-child[href*=dr-zeno]:hover::after {
+    content: "Capo Team Controllo Canone";
+}
+
+
 .printuser a:only-child[href*=drgesso]::before {
     background: var(--it_co);
     content: " ";
 }
-.printuser a:only-child[href*=dgctt]::before {
-    background: linear-gradient(110deg, var(--it_td) 32%, var(--it_so) 34%, var(--it_so) 64%, var(--it_co) 66%);
-    content: " ";
-    width: 24px;
-}
-.printuser a:only-child[href*=lo-dev]::before {
-    background: linear-gradient(110deg, var(--it_td) 32%, var(--it_so) 34%, var(--it_so) 64%, var(--it_co) 66%);
-    content: " ";
-    width: 24px;
-}
-.printuser a:only-child[href*=agt-fedrik]::before {
-    background: linear-gradient(110deg, var(--it_so) 49%, var(--it_ti) 51%);
+.printuser > a:first-child:not(:only-child)[href*=drgesso]::after {
+    background: var(--it_co);
     content: " ";
 }
-.printuser a:only-child[href*="90377sedna"]::before {
-    background: linear-gradient(110deg, var(--it_td) 49%, var(--it_ti) 51%);
-    content: " ";
+.printuser a:last-child[href*=drgesso]:hover::after {
+    content: "Redazione Corriere";
 }
-.printuser a:only-child[href*=theboxoffun]::before {
-    background: linear-gradient(110deg, var(--it_td) 49%, var(--it_ti) 51%);
-    content: " ";
-}
+
+
+
 .printuser a:only-child[href*=nazartheezio]::before,
 .printuser a:only-child[href*=Leonor-Bolek]::before,
 .printuser a:only-child[href*=heloderma-horridum]::before {
     background: var(--it_ti);
     content: " ";
 }
-.printuser a:only-child[href*=siddartha-alonne]::before {
-    background: linear-gradient(110deg, var(--it_td) 32%, var(--it_ti) 34%, var(--it_ti) 64%, var(--it_tc) 66%);
+.printuser > a:first-child:not(:only-child)[href*=Leonor-Bolek]::after,
+.printuser > a:first-child:not(:only-child)[href*=nazartheezio]::after,
+.printuser > a:first-child:not(:only-child)[href*=heloderma-horridum]::after {
+    background: var(--it_ti);
     content: " ";
-    width: 24px;
 }
+.printuser a:last-child[href*=Leonor-Bolek]:hover::after,
+.printuser a:last-child[href*=nazartheezio]:hover::after,
+.printuser a:last-child[href*=heloderma-horridum]:hover::after {
+    content: "Traduttore Internazionale";
+}
+
+
 .printuser a:only-child[href*=almosca99]::before,
 .printuser a:only-child[href*=claudoi]::before,
 .printuser a:only-child[href*=dr-placido]::before,
@@ -156,90 +314,6 @@ ___________________________
 .printuser a:only-child[href*=t-channel]::before,
 .printuser a:only-child[href*=venez]::before {
     background: var(--it_td);
-    content: " ";
-}
- 
-.printuser > a:first-child:not(:only-child)::after {
-    border: 1px solid #2c2c2c;
-    display: inline-block;
-    height: 14px;
-    position: relative;
-    right: 9px;
-    top: 1px;
-    vertical-align: top;
-    width: 5px;
-    white-space: pre;
-}
- 
-
-.printuser > a:first-child:not(:only-child)[href*=dr-aisenberg]::after {
-    background: linear-gradient(var(--it_ad) 4px, #2c2c2c, var(--it_td) 5px, var(--it_td) 9px, #2c2c2c, var(--it_tc) 10px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=drgraph]::after {
-    background: linear-gradient(var(--it_ad) 4px, #2c2c2c, var(--it_td) 5px, var(--it_td) 9px, #2c2c2c, var(--it_tc) 10px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=tradehumor]::after {
-    background: linear-gradient(var(--it_ad) 4px, #2c2c2c, var(--it_td) 5px, var(--it_td) 9px, #2c2c2c, var(--it_co) 10px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=riko-based-lifeform]::after {
-    background: linear-gradient(var(--it_ad) 6px, #2c2c2c 7px, var(--it_td) 7px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=dr-zeno]::after {
-    background: var(--it_tc);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=thatguyrichard]::after {
-    background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_tc) 7px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=quantumcryptographer]::after {
-    background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_tc) 7px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=dr-vulpes]::after {
-    background: linear-gradient(var(--it_ct) 6px, #2c2c2c 7px, var(--it_so) 7px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=amatropie]::after {
-    background: var(--it_co);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=drgesso]::after {
-    background: var(--it_co);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=dgctt]::after {
-    background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_so) 5px, var(--it_so) 9px, #2c2c2c, var(--it_co) 10px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=lo-dev]::after {
-    background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_so) 5px, var(--it_so) 9px, #2c2c2c, var(--it_co) 10px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=agt-fedrik]::after {
-    background: linear-gradient(var(--it_so) 6px, #2c2c2c 7px, var(--it_ti) 7px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*="90377sedna"]::after {
-    background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_ti) 7px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=theboxoffun]::after {
-    background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_ti) 7px);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=Leonor-Bolek]::after,
-.printuser > a:first-child:not(:only-child)[href*=nazartheezio]::after,
-.printuser > a:first-child:not(:only-child)[href*=heloderma-horridum]::after {
-    background: var(--it_ti);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=siddartha-alonne]::after {
-    background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_ti) 5px, var(--it_ti) 9px, #2c2c2c, var(--it_tc) 10px);
     content: " ";
 }
 .printuser > a:first-child:not(:only-child)[href*=almosca99]::after,
@@ -264,6 +338,51 @@ ___________________________
     background: var(--it_td);
     content: " ";
 }
+.printuser a:last-child[href*=almosca99]:hover::after,
+.printuser a:last-child[href*=claudoi]:hover::after,
+.printuser a:last-child[href*=dr-placido]:hover::after,
+.printuser a:last-child[href*=dottor-stranamore]:hover::after,
+.printuser a:last-child[href*=desyyyyz]:hover::after,
+.printuser a:last-child[href*=dralberts]:hover::after,
+.printuser a:last-child[href*=drdamian]:hover::after,
+.printuser a:last-child[href*=drhosten]:hover::after,
+.printuser a:last-child[href*=edivad]:hover::after,
+.printuser a:last-child[href*=jyj-52]:hover::after,
+.printuser a:last-child[href*=kyaktus2000]:hover::after,
+.printuser a:last-child[href*=luca125]:hover::after,
+.printuser a:last-child[href*=lordreyne]:hover::after,
+.printuser a:last-child[href*=luke-mcdonut]:hover::after,
+.printuser a:last-child[href*=meleda]:hover::after,
+.printuser a:last-child[href*=samdragon]:hover::after,
+.printuser a:last-child[href*=shiki-ouji]:hover::after,
+.printuser a:last-child[href*=t-channel]:hover::after,
+.printuser a:last-child[href*=venez]:hover::after {
+    content: "Traduttore";
+}
+
+
+ 
+.printuser > a:first-child:not(:only-child)::after {
+    border: 1px solid #2c2c2c;
+    display: inline-block;
+    height: 14px;
+    position: relative;
+    right: 9px;
+    top: 1px;
+    vertical-align: top;
+    width: 5px;
+    white-space: pre;
+}
+ 
+
+
+
+
+
+
+
+
+
  
 .no-staff-highlight .printuser a::before,
 .no-staff-highlight .printuser > a:first-child:not(:only-child)::after,
@@ -290,76 +409,10 @@ ___________________________
 }
  
 
-.printuser a:last-child[href*=dr-aisenberg]:hover::after {
-    content: "Amministratore, Traduttore, Team Controllo Canone";
-}
-.printuser a:last-child[href*=drgraph]:hover::after {
-    content: "Amministratore, Traduttore, Team Controllo Canone";
-}
-.printuser a:last-child[href*=tradehumor]:hover::after {
-    content: "Moderatore, Traduttore, Redazione Corriere";
-}
-.printuser a:last-child[href*=riko-based-lifeform]:hover::after {
-    content: "Moderatore, Traduttore";
-}
-.printuser a:last-child[href*=dr-zeno]:hover::after {
-    content: "Capo Team Controllo Canone";
-}
-.printuser a:last-child[href*=thatguyrichard]:hover::after {
-    content: "Traduttore, Team Controllo Canone";
-}
-.printuser a:last-child[href*=quantumcryptographer]:hover::after {
-    content: "Traduttore, Team Controllo Canone";
-}
-.printuser a:last-child[href*=dr-vulpes]:hover::after {
-    content: "Capo Traduttore, Team Social";
-}
-.printuser a:last-child[href*=amatropie]:hover::after {
-    content: "Traduttore, Team Social";
-}
-.printuser a:last-child[href*=drgesso]:hover::after {
-    content: "Redazione Corriere";
-}
-.printuser a:last-child[href*=dgctt]:hover::after {
-    content: "Traduttore, Capo Team Social, Redazione Corriere";
-}
-.printuser a:last-child[href*=lo-dev]:hover::after {
-    content: "Traduttore, Team Social, Redazione Corriere";
-}
-.printuser a:last-child[href*=agt-fedrik]:hover::after {
-    content: "Team Social, Traduttore Internazionale";
-}
-.printuser a:last-child[href*="90377sedna"]:hover::after {
-    content: "Traduttore, Traduttore Internazionale";
-}
-.printuser a:last-child[href*=theboxoffun]:hover::after {
-    content: "Traduttore, Traduttore Internazionale";
-}
-.printuser a:last-child[href*=Leonor-Bolek]:hover::after,
-.printuser a:last-child[href*=nazartheezio]:hover::after,
-.printuser a:last-child[href*=heloderma-horridum]:hover::after {
-    content: "Traduttore Internazionale";
-}
-.printuser a:last-child[href*=siddartha-alonne]:hover::after {
-    content: "Traduttore, Traduttore Internazionale, Team Controllo Canone";
-}
-.printuser a:last-child[href*=almosca99]:hover::after,
-.printuser a:last-child[href*=claudoi]:hover::after,
-.printuser a:last-child[href*=dr-placido]:hover::after,
-.printuser a:last-child[href*=dottor-stranamore]:hover::after,
-.printuser a:last-child[href*=desyyyyz]:hover::after,
-.printuser a:last-child[href*=dralberts]:hover::after,
-.printuser a:last-child[href*=drdamian]:hover::after,
-.printuser a:last-child[href*=drhosten]:hover::after,
-.printuser a:last-child[href*=edivad]:hover::after,
-.printuser a:last-child[href*=jyj-52]:hover::after,
-.printuser a:last-child[href*=kyaktus2000]:hover::after,
-.printuser a:last-child[href*=luca125]:hover::after,
-.printuser a:last-child[href*=lordreyne]:hover::after,
-.printuser a:last-child[href*=luke-mcdonut]:hover::after,
-.printuser a:last-child[href*=meleda]:hover::after,
-.printuser a:last-child[href*=samdragon]:hover::after,
-.printuser a:last-child[href*=shiki-ouji]:hover::after,
-.printuser a:last-child[href*=t-channel]:hover::after,
-.printuser a:last-child[href*=venez]:hover::after {
-    content: "Traduttore";
+
+
+
+
+
+
+
