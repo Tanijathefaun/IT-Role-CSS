@@ -284,15 +284,15 @@
 
 /* Traduttore, Traduttore Internazionale */
 
-.printuser a:only-child[href*=90377sedna]::before {
+.printuser a:only-child[href*="90377sedna"]::before {
     background: linear-gradient(110deg, var(--it_td) 49%, var(--it_ti) 51%);
     content: " ";
 }
-.printuser > a:first-child:not(:only-child)[href*=90377sedna]::after {
+.printuser > a:first-child:not(:only-child)[href*="90377sedna"]::after {
     background: linear-gradient(var(--it_td) 6px, #2c2c2c 7px, var(--it_ti) 7px);
     content: " ";
 }
-.printuser a:last-child[href*=90377sedna]:hover::after {
+.printuser a:last-child[href*="90377sedna"]:hover::after {
     content: "Traduttore, Traduttore Internazionale";
 }
 
