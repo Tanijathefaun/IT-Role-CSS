@@ -120,16 +120,16 @@
 
 /* TradeHumor */
 .printuser a:only-child[href*=tradehumor]::before {
-    background: linear-gradient(110deg, var(--it_ad) 32%, var(--it_td) 34%, var(--it_td) 64%, var(--it_co) 66%);
+    background: linear-gradient(110deg, var(--it_ad) 49%, var(--it_td) 51%);
     content: " ";
     width: 24px;
 }
 .printuser > a:first-child:not(:only-child)[href*=tradehumor]::after {
-    background: linear-gradient(var(--it_ad) 4px, #2c2c2c, var(--it_td) 5px, var(--it_td) 9px, #2c2c2c, var(--it_co) 10px);
+    background: linear-gradient(var(--it_ad) 6px, #2c2c2c 7px, var(--it_td) 7px);
     content: " ";
 }
 .printuser a:last-child[href*=tradehumor]:hover::after {
-    content: "Moderatore, Traduttore, Redazione Corriere";
+    content: "Moderatore, Traduttore";
 }
 
 /* Riko */
@@ -165,7 +165,7 @@
 
 /* Traduttore + Team Social + Redazione Corriere */
 
-.printuser a:only-child[href*=lo-dev]::before {
+/* .printuser a:only-child[href*=lo-dev]::before {
     background: linear-gradient(110deg, var(--it_td) 32%, var(--it_so) 34%, var(--it_so) 64%, var(--it_co) 66%);
     content: " ";
     width: 24px;
@@ -176,7 +176,7 @@
 }
 .printuser a:last-child[href*=lo-dev]:hover::after {
     content: "Traduttore, Team Social, Redazione Corriere";
-}
+} /*
 
 /* Traduttore + Traduttore Internazionale + Team Controllo Canone */
 
@@ -195,15 +195,18 @@
 
 /* Traduttore + Redazione Corriere + Team Controllo Canone */
 
+.printuser a:only-child[href*=lo-dev]::before,
 .printuser a:only-child[href*=siddartha-alonne]::before {
     background: linear-gradient(110deg, var(--it_td) 32%, var(--it_co) 34%, var(--it_co) 64%, var(--it_tc) 66%);
     content: " ";
     width: 24px;
 }
+.printuser > a:first-child:not(:only-child)[href*=lo-dev]::after,
 .printuser > a:first-child:not(:only-child)[href*=siddartha-alonne]::after {
     background: linear-gradient(var(--it_td) 4px, #2c2c2c, var(--it_co) 5px, var(--it_co) 9px, #2c2c2c, var(--it_tc) 10px);
     content: " ";
 }
+.printuser a:last-child[href*=lo-dev]:hover::after {
 .printuser a:last-child[href*=siddartha-alonne]:hover::after {
     content: "Traduttore, Redazione Corriere, Team Controllo Canone";
 }
@@ -326,43 +329,39 @@
 
 /* Redazione Corriere */
 
-.printuser > a:first-child:not(:only-child)[href*=amatropie]::after {
-    background: var(--it_co);
-    content: " ";
-}
+.printuser a:only-child[href*=procastinationtime]::before,
+.printuser a:only-child[href*=ardi0177]::before,
 .printuser a:only-child[href*=amatropie]::before {
     background: var(--it_co);
     content: " ";
 }
+.printuser > a:first-child:not(:only-child)[href*=procastinationtime]::after,
+.printuser > a:first-child:not(:only-child)[href*=ardi0177]::after,
+.printuser > a:first-child:not(:only-child)[href*=amatropie]::after {
+    background: var(--it_co);
+    content: " ";
+}
+.printuser a:last-child[href*=procastinationtime]:hover::after,
+.printuser a:last-child[href*=ardi0177]:hover::after,
 .printuser a:last-child[href*=amatropie]:hover::after {
     content: "Redazione Corriere";
 }
 
-/* .printuser a:only-child[href*=drgesso]::before {
-    background: var(--it_co);
-    content: " ";
-}
-.printuser > a:first-child:not(:only-child)[href*=drgesso]::after {
-    background: var(--it_co);
-    content: " ";
-}
-.printuser a:last-child[href*=drgesso]:hover::after {
-    content: "Redazione Corriere";
-} */
-
 /* Team Social */
 
 .printuser a:only-child[href*=bob-class-ai]::before {
-    background: var(--it_co);
+    background: var(--it_so);
     content: " ";
 }
 .printuser > a:first-child:not(:only-child)[href*=bob-class-ai]::after {
-    background: var(--it_co);
+    background: var(--it_so);
     content: " ";
 }
 .printuser a:last-child[href*=bob-class-ai]:hover::after {
-    content: "Redazione Corriere";
+    content: "Team Social";
 }
+
+
 
 /* Traduttore INT */
 
@@ -385,6 +384,8 @@
 }
 
 /* Traduttore */
+.printuser a:only-child[href*=james-pts]::before,
+.printuser a:only-child[href*=exoduus]::before,
 .printuser a:only-child[href*=tacoboy666]::before,
 .printuser a:only-child[href*=yesss]::before,
 .printuser a:only-child[href*=almosca99]::before,
@@ -409,6 +410,8 @@
     background: var(--it_td);
     content: " ";
 }
+.printuser > a:first-child:not(:only-child)[href*=james-pts]::after,
+.printuser > a:first-child:not(:only-child)[href*=exoduus]::after,
 .printuser > a:first-child:not(:only-child)[href*=tacoboy666]::after,
 .printuser > a:first-child:not(:only-child)[href*=yessss]::after,
 .printuser > a:first-child:not(:only-child)[href*=almosca99]::after,
@@ -433,6 +436,8 @@
     background: var(--it_td);
     content: " ";
 }
+.printuser a:last-child[href*=james-pts]:hover::after,
+.printuser a:last-child[href*=exoduus]:hover::after,
 .printuser a:last-child[href*=tacoboy666]:hover::after,
 .printuser a:last-child[href*=yessss]:hover::after,
 .printuser a:last-child[href*=almosca99]:hover::after,
